@@ -1,40 +1,43 @@
 *{
-    background-color: #86858a;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#image1 {
-    height: 138px;
-    width: 138px;
-    align
+/* Header */
+.menu-container {
+    color: #290d0d;
+    background-color: #e8e7f4;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
 }
-.end { 
-    position:absolute;
-    top: 8px;
-    right: 16px;
+.menu {
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
 }
-.title{
-    text-align: center;
-    color: #dad4ce;
-    background-color: rgb(65, 35, 35);
-    font-size: xx-large;
+.links {
+    display: flex;
+    justify-content:flex-end;
+    gap: 30px;
+}
+
+.logo {
+    border: 2px solid #290d0d;
+}
+.hero-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
     font-weight: bolder;
-    font-family: 'Gothic';
+    font-family: 'Franklin Gothic Medium';
+    color: #0f2424;
 }
-.nav1, .nav2, .nav3 {
-shape-margin: 10%;
-font-size: x-large;
-font-family: 'Gothic';
-font-weight: 700;
-top: 20px;
-bottom: 20px;
-margin: 20px;
-border: none;
-color: white;
-padding: 16px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-transition-duration: 0.4s;
-cursor: crosshair;
-}
+.profession {
+    color: #782121;
+    font-size: medium;
+}   
