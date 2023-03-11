@@ -41,3 +41,27 @@
     color: #782121;
     font-size: medium;
 }   
+button:hover {
+    background-color: #0f2424;
+    color: #e8e7f4;
+}
+.projects:hover {
+    color: #008000;
+}
+.contact:hover {
+    color: #008000;
+}
+.motto {
+    font-size: 20px;
+    color: #c35d1d;
+    display: flex;
+    justify-content: center;
+}
+strong {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+span {
+    color: #008000;
+    font-size: 35px;
+}
