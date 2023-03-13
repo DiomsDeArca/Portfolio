@@ -2,66 +2,127 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Righteous', cursive;  
 }
 /* Header */
-.menu-container {
-    color: #290d0d;
-    background-color: #e8e7f4;
-    padding: 10px 0;
-
-    display: flex;
-    justify-content: center;
+img {
+    width: 20px;
 }
 .menu {
-    width: 900px;
-
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    margin-top: 1px;
+    margin-right: 0;
+    padding: 10px;
+    background-color: #ffd700;
+    color: #343131;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
 }
-.links {
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: #343131;
+}
+.dropdown > span {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.about-menu {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    top: -25px;
+    left: -30px;
+    z-index: 1;
+    display: none;
+    margin-bottom: 0;
+    flex-direction: column;
+    background-color: #ffd700;
+    border-radius: 5px;
+    padding-top: 30px;
+}
+.about-menu > li {
+    padding: 0 40px 10px 20px;
+}
+.dropdown:hover .about-menu {
     display: flex;
-    justify-content:flex-end;
-    gap: 30px;
+    flex-direction: column;
+    background-color: #ffd700;
 }
-
-.logo {
-    border: 2px solid #290d0d;
+a:hover {
+    color: #663399;
+    text-decoration: underline;
+}
+.button:hover {
+    background-color: #ffd700;
+    color: white;
 }
 .hero-container {
-    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: oblique;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    font-size: large;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium';
-    color: #0f2424;
+    color: #337599;
 }
 .profession {
-    color: #782121;
-    font-size: medium;
-}   
-button:hover {
-    background-color: #0f2424;
-    color: #e8e7f4;
+    font-size: 25px;
+    color: #a91616;
 }
-.projects:hover {
-    color: #008000;
+.up-symbol {
+    font-size: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
 }
-.contact:hover {
-    color: #008000;
+.up-symbol:hover {
+    color: green;
+    text-decoration: none;
 }
-.motto {
-    font-size: 20px;
-    color: #c35d1d;
+.information-container {
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    padding-top: 100px;
 }
-strong {
-    margin-left: 2px;
-    margin-right: 2px;
+.picture {
+    width: 300px;
+    border-radius: 100px;
+    border: 10px solid #343131;
+    margin-left: 100px;
 }
-span {
-    color: #008000;
-    font-size: 35px;
+.information {
+    color: #337599;
+    margin-top: 100px;
+}
+.name {
+    color: #faebd7;
+    font-size: 60px;
+}
+.job-description {
+    display: flex;
+    justify-content: first baseline;
+    color: #337599;
+    position: relative;
+    left: 80px;
+    top: -120px;
+    font-size: 30px;
+}
+.job-list {
+    list-style: none;
+    color: #faf8f7f1;
+    font-size: 40px;
+    margin-left: 10px;
+}
+code {
+    color: #d3cd74;
+    font-family: 'Courier New', Courier, monospace  ;
+}
+.ampersand{
+    color: #337599;
+    font-size: 30px;
 }
