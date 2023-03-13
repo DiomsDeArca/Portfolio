@@ -88,12 +88,15 @@ a:hover {
     justify-content: center;
     font-size: 40px;
     padding-top: 100px;
+    position: relative;
+    left: 10px;
+    top: 10px;    
 }
 .picture {
     width: 300px;
     border-radius: 100px;
     border: 10px solid #343131;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 .information {
     color: #337599;
