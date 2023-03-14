@@ -1,24 +1,47 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Righteous', cursive;  
+    font-family: 'Righteous', cursive;
 }
-/* Header */
 img {
-    width: 20px;
+    width: 30px;
 }
-.menu {
+.page {
     display: flex;
-    justify-content:space-between;
-    margin-top: 1px;
-    margin-right: 0;
-    padding: 10px;
+    flex-wrap: wrap;
+}
+.section {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.menu-container {
     background-color: #ffd700;
-    color: #343131;
-    font-size: 18px;
-    text-decoration: none;
+}
+.logo {
+    position: absolute;
+    left:20px;
+    top: 5px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
     list-style: none;
+    position: absolute;
+    right: 20px;
+}
+.nav-bar > li {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 25px;
+    margin-right: -10px;
+}
+.nav-bar3 {
+    margin-right: -100px;
 }
 a:link, 
 a:visited {
@@ -33,9 +56,9 @@ a:visited {
 .about-menu {
     text-decoration: none;
     list-style: none;
-    position: relative;
-    top: -25px;
-    left: -30px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
     z-index: 1;
     display: none;
     margin-bottom: 0;
@@ -52,80 +75,105 @@ a:visited {
     flex-direction: column;
     background-color: #ffd700;
 }
-a:hover {
-    color: #663399;
-    text-decoration: underline;
+.picture {
+    width: 400px;
+    height: 300px;
+    border: 10px solid #343131;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-.button:hover {
-    background-color: #ffd700;
-    color: white;
-}
-.hero-container {
+.about {
+    color: #dfe2e8;
     font-size: 30px;
-    font-weight: bolder;
-    font-style: oblique;
-    display: flex;
-    justify-content: center;
-    color: #337599;
+}
+#name {
+    color: #0073ff;
+    font-size: 45px;
+    margin-top: -30px;
 }
 .profession {
-    font-size: 25px;
-    color: #a91616;
-}
-.up-symbol {
-    font-size: 50px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-
-}
-.up-symbol:hover {
-    color: green;
-    text-decoration: none;
-}
-.information-container {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding-top: 100px;
-    position: relative;
-    left: 10px;
-    top: 10px;    
-}
-.picture {
-    width: 300px;
-    border-radius: 100px;
-    border: 10px solid #343131;
-    margin-left: 120px;
-}
-.information {
-    color: #337599;
-    margin-top: 100px;
-}
-.name {
-    color: #faebd7;
-    font-size: 60px;
-}
-.job-description {
-    display: flex;
-    justify-content: first baseline;
-    color: #337599;
-    position: relative;
-    left: 80px;
-    top: -120px;
+    color: #fc6e09;
     font-size: 30px;
-}
-.job-list {
-    list-style: none;
-    color: #faf8f7f1;
-    font-size: 40px;
-    margin-left: 10px;
+    margin-top: -30px;
 }
 code {
-    color: #d3cd74;
-    font-family: 'Courier New', Courier, monospace  ;
+    color: #ffd700;
+    font-size: 40px;
+    font-family:fantasy;
 }
-.ampersand{
-    color: #337599;
-    font-size: 30px;
+a:hover {
+    color: #0073ff;
+    text-transform:capitalize;
+    text-decoration-color: #0073ff;
+    text-decoration: underline;
+}
+.personal-info {
+    background-color: #fc6e09;
+    height: 80px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+    margin-top: 200px;
+}
+.personal-info-details {
+    background-color: #75270b;
+    color: #dfe2e8;
+    height: 140px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+}
+hr { 
+    color: #dfe2e8;
+}
+.skills {
+    background-color: #fc6e09;
+    height: 80px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.skills-logo > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+.experience {
+    background-color: #fc6e09;
+    height: 80px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+.experience-details {
+    background-color: #75270b;
+    color: #dfe2e8;
+    height: 140px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+}
+.education {
+    background-color: #fc6e09;
+    height: 80px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.education-details {
+    background-color: #75270b;
+    color: #dfe2e8;
+    height: 140px;
+    border: 3px solid #343131;
+    border-radius: 50px;
+}
+.project {
+    color: #dfe2e8;
+    font-size: 35px;
+    margin-top: 50px;
+    font-family:monospace;
+}
+.project-details > a > img {
+    width: 300px;
+    margin-top: 200px;
 }
