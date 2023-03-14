@@ -14,21 +14,21 @@
     </head>
     <body>
         <div class="page">
-            <header class="section menu-container">
-                <a class="logo"href="#">Kuya<img src="images/man-in-suit-and-tie-2.svg" alt="A logo of a man in suit">Dioms</a>
+            <header id="home" class="section menu-container">
+                <a class="logo"href="#home">Kuya<img src="images/man-in-suit-and-tie-2.svg" alt="A logo of a man in suit">Dioms</a>
                 <nav class="menu">
                     <ul class="nav-bar">
                         <li class="dropdown"><span>About &#9662;</span>
                             <ul class="about-menu">
-                                <li><a href="#">Personal Info</a></li>
-                                <li><a href="#">Skills</a></li>
-                                <li><a href="#">Experience</a></li>
-                                <li><a href="#">Education</a></li>
+                                <li><a href="#p-info">Personal Info</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#experience">Experience</a></li>
+                                <li><a href="#education">Education</a></li>
                             </ul>
                         </li>
-                        <li class="nav-bar1"><a href="#">Projects</a></li>
-                        <li class="nav-bar2"><a href="#">Contact</a></li>
-                        <li class="nav-bar3"><a href="#"><button>Download my CV</button></a></li>
+                        <li class="nav-bar1"><a href="#projects">Projects</a></li>
+                        <li class="nav-bar2"><a href="#contact">Contact</a></li>
+                        <li class="nav-bar3"><a href="images/Pictre 2x2.PNG" download="images"><button>Download my CV</button></a></li>
                     </ul>
                 </nav>
             </header>
@@ -45,17 +45,17 @@
                 <p>Full Stack Web <code>Developer</code></p>
             </section>
             <hr>
-            <section class="section personal-info">
+            <section id="p-info" class="section personal-info">
                 <h1>Personal Information:</h1>
             </section>
             <section class="section personal-info-details">
                     <ul>
                         <li>I am 27 years old from Antipolo City</li>
-                        <li>I am a former call center expert who are always looking into an oppurtunity to upskill my knowledge.</li>
+                        <li>I am a former call center expert who are always looking into an opportunity to upskill my knowledge.</li>
                         <li>A very passionate developer who now loves coding</li>
                     </ul>
             </section>
-            <section class="section skills">
+            <section id="skills" class="section skills">
                 <h1>Skills</h1>
             </section>
             <section class="section skills-logo">
@@ -65,7 +65,7 @@
                 <img src="https://www.helpshift.com/wp-content/uploads/2022/04/Customer-Service-Representative.png" alt="customer service logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/3486/3486728.png" alt="">
             </section>
-            <section class="section experience">
+            <section id="experience" class="section experience">
                 <h1>Experience</h1>
             </section>
             <section class="section experience-details">
@@ -75,7 +75,7 @@
                     <li>Alorica &gt; Technical-Support-Representative 2020-2021</li>
                 </ul>
             </section>
-            <section class="section education">
+            <section id="education" class="section education">
                 <h1>Education</h1>
             </section>
             <section class="section education-details">
@@ -83,7 +83,7 @@
                     <li>&copy;KodeGoPH &gt; Full Stack Web Developer - On going</li>
                 </ul>
             </section>
-            <section class="section project">
+            <section id="projects" class="section project">
                 <h1>Projects</h1>
             </section>
             <section class="section project-details">
@@ -93,12 +93,47 @@
                 </a>
             </section>
 
-            <section class="section contact">
+            <section id="contact" class="section contact">
                 <p>Send a message?</p>
-                <form action=""></form>
             </section>
+            <section class="section contact-details">
+                <form action="/server/" method="get" class="speaker-form">
+                    <div class="form-row">
+                        <label for="full-name">Name</label>
+                        <input type="text" id="full-name" name="full-name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="joe@example.com"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="abstract">Message</label>
+                        <textarea name="abstract" id="abstract"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </section>
+            <address> Or just click my name to get in touch. <a href="mailto:diomsdearcaii@gmail.com">Diomedes De Arca</a></address>
 
-            <div class="section footer"></div>
+            <div class="section footer">
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100086020538033"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png">Facebook</a>  
+                    <a href=""><img src="https://assets.stickpng.com/images/5842a8fba6515b1e0ad75b03.png">Telegram</a>  
+                    <a href="https://github.com/DiomsDeArca"><img src="https://pngimg.com/d/github_PNG58.png">Github</a>  
+                </div>
+                <div>
+                    <p>Address: Sitio Tulagsis Ph5 Rd11 Brgy. Bagong Nayon Antipolo, Rizal 1870</p>
+                    <p>Contact Number: +639763578492</p>
+                </div>
+            </div>
+            <div class="section author">
+                <span>Designed by &copy;Dioms De Arca <time datetime="2023-03-14" March 14</span>
+            </div>
+         </div>
+         <div>
+            <a class="up-symbol" href="#home">&#9751;</a>
          </div>
     </body>
 </html>

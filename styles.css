@@ -110,56 +110,25 @@ a:hover {
     text-decoration-color: #0073ff;
     text-decoration: underline;
 }
-.personal-info {
+.personal-info, .skills, .experience, .education {
     background-color: #fc6e09;
     height: 80px;
     border: 3px solid #343131;
     border-radius: 50px;
     margin-top: 200px;
 }
-.personal-info-details {
-    background-color: #75270b;
-    color: #dfe2e8;
-    height: 140px;
-    border: 3px solid #343131;
-    border-radius: 50px;
+.personal-info-details > ul > li,
+.experience-details > ul > li,
+.education-details >ul > li {
+    list-style: none;
+    font-size: 20px;
+    font-family: monospace;
+} 
+.skills, .experience, .education {
+    margin-top: 60px;
 }
-hr { 
-    color: #dfe2e8;
-}
-.skills {
-    background-color: #fc6e09;
-    height: 80px;
-    border: 3px solid #343131;
-    border-radius: 50px;
-    margin-top: 50px;
-}
-.skills-logo > img{
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-}
-.experience {
-    background-color: #fc6e09;
-    height: 80px;
-    border: 3px solid #343131;
-    border-radius: 50px;
-    margin-top: 80px;
-}
-.experience-details {
-    background-color: #75270b;
-    color: #dfe2e8;
-    height: 140px;
-    border: 3px solid #343131;
-    border-radius: 50px;
-}
-.education {
-    background-color: #fc6e09;
-    height: 80px;
-    border: 3px solid #343131;
-    border-radius: 50px;
-    margin-top: 50px;
-}
+.personal-info-details,
+.experience-details,
 .education-details {
     background-color: #75270b;
     color: #dfe2e8;
@@ -167,13 +136,82 @@ hr {
     border: 3px solid #343131;
     border-radius: 50px;
 }
-.project {
+.personal-info-details {
+    height: 200px;
+    border-radius: 20px;
+}
+hr { 
+    color: #dfe2e8;
+}
+.skills-logo > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+.project, .contact {
     color: #dfe2e8;
     font-size: 35px;
     margin-top: 50px;
     font-family:monospace;
 }
+.contact {
+    margin-top: 200px;
+}
 .project-details > a > img {
     width: 300px;
     margin-top: 200px;
 }
+.up-symbol {
+    font-size:50px;
+    color: red;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;   
+}
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    color: #dfe2e8;
+}
+.form-row input[type="email"],
+.form-row input[type="text"],
+.form-row > #abstract {
+    background-color: #ffffff;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row > button {
+    width:100px;
+  }
+.contact-details {
+    height:300px;
+    background-color: #75270b;
+}
+address {
+    color: #d6d9dc;
+    font-size: 18px;
+}
+address > a {
+    font-family: monospace;
+    color: #00ffcc;
+}
+.footer {
+    background-color: #ffd700;
+    height: 200px;
+}
+.footer > div > a,
+.footer > div > p {
+    display: block;
+    margin-left: 20px;
+}
+.author {
+    color: #75270b;
+    background-color: #ffd700;
+    margin-top: -10px;
+}
+
